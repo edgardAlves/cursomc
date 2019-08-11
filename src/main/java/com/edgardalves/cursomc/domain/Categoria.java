@@ -11,6 +11,15 @@ import javax.persistence.Id;
 public class Categoria implements Serializable {
 	private static final long serialVersionUID = 1L;
 	
+	public Categoria(Integer id, String nome) {
+		super();
+		this.id = id;
+		this.nome = nome;
+	}
+	
+	public Categoria() {
+	}
+	
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Integer id;
@@ -27,11 +36,7 @@ public class Categoria implements Serializable {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-	public Categoria(Integer id, String nome) {
-		super();
-		this.id = id;
-		this.nome = nome;
-	}
+	
 	@Override
 	public int hashCode() {
 		final int prime = 31;
