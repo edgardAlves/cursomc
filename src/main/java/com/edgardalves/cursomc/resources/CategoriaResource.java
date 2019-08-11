@@ -12,6 +12,16 @@ import org.springframework.web.bind.annotation.RestController;
 import com.edgardalves.cursomc.domain.Categoria;
 import com.edgardalves.cursomc.services.CategoriaService;
 
+/**
+ * 
+ * @author edgardalves
+ * 
+ * Endpoint: categorias/{id} 	-- 		Retornar Categoria e seus Produtos
+ * Endpoint: clientes/{id} 	 	-- 		Retornar Cliente, seus telefones e seus endereços
+ * Endpoint: pedidos/{id} 	 	-- 		Retornar Pedido, seu cliente, seu pagamento, seus itens de pedido, seu endereço de entrega
+ *
+ */
+
 @RestController
 @RequestMapping(value="/categorias")
 public class CategoriaResource {
